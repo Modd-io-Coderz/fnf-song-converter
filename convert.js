@@ -49,7 +49,7 @@ function loadFile(file) {
   if (!file) return;
 
   if (!file.name.endsWith('.json')) {
-    alert("Enter a JSON file, silly!\nClick 'Save' in the beatmap editor and use that file.");
+    alert("Enter a JSON file, kid!\nClick 'Save' in the beatmap editor and use that file.");
     return
   }
   
@@ -183,7 +183,7 @@ function loadFile(file) {
 
     link.href = url;
     link.innerText = 'Download';
-    link.download = file.name.split(".")[0] + ".txt";
+    link.download = file.name.split(".")[0] + "_FC.txt";
     link.id = "download";
     link.addEventListener('click', function(){download()}, false);
     outputArea.appendChild(link);
